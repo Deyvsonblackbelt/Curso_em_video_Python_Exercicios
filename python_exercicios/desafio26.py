@@ -1,7 +1,7 @@
 # Faça um programa que leia uma frase pelo teclado e mostre quantas vezes aparece a letra 'a' em que posição ela
 #aparece pela primeira vez e em que posição ela aparece pela ultima vez.
 
-palavra = input('Digite uma frase qualquer: ')
+palavra = input('Digite uma frase qualquer: ').strip().lower()
 quantidade = palavra.count('a')
 print(f'''
 Quantidade de vezes que a letra "a" aparece na frase é {quantidade} vezes!
