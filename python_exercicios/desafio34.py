@@ -4,11 +4,11 @@
 
 sal = float(input('Quanto é o seu salario atual: '))
 if sal >= 1250:
-    soma = sal * 0.10
-    aum = sal - soma
+    soma =sal + (sal * 10/100)
+    aum = (sal * 10/100)
     print(f'Seu salário teve um aumento de R${soma:.2f} seu novo salário é R${aum:.2f} ')
 
 if sal < 1250:
-    soma = sal * 0.15
-    aum = sal - soma
-    print(f'Seu salário teve um aumento de R${aum:.2f} seu novo salário é R${aum:.2f}')
+    somaa = sal + (sal * 15)/100
+    aumen = (sal * 15)/100
+    print(f'Seu salário teve um aumento de R${aumen:.2f} seu novo salário é R${somaa:.2f}')

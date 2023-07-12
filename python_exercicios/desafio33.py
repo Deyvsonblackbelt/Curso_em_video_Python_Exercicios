@@ -15,9 +15,9 @@ if t < p and t < s:
 
 maior = p
 if s > p and s > t:
-    menor = s
+    maior = s
 if t > p and t > s:
-    menor = t
+    maior = t
 
 print('O menor valor digitado foi {}'.format(menor))
 print('O maior valor digitado foi {}'.format(maior))
