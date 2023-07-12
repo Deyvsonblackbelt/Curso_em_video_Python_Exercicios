@@ -3,10 +3,16 @@
 # venceu ou perdeu.
 
 import random as rd
+from time import sleep
 
-print('vou sortear um número entre 0 e 5 tente advinhar qual foi o número! ')
 resultado = rd.randint(0, 5)
+print('-=-'*23)
+print('vou sortear um número entre 0 e 5 tente advinhar qual foi o número! ')
+print('-=-'*23)
 n = int(input('Qual é o seu palpite? digite um número: '))
+print('>>>PROCESSANDO<<<')
+sleep(3)
+print('')
 if n == resultado:
     print('Parabéns voçê acertou ! venceu o desafio!')
 else:
