@@ -7,3 +7,5 @@ if (n % 2) == 0:
     print('O número digitado é par!')
 else:
     print('O número digitado em ímpar!')
+
+# pode ser usado uma variavel ex: num = n % 2
