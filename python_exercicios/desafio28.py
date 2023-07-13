@@ -10,11 +10,11 @@ print('-=-'*23)
 print('vou sortear um número entre 0 e 5 tente advinhar qual foi o número! ')
 print('-=-'*23)
 n = int(input('Qual é o seu palpite? digite um número: '))
-print('>>>PROCESSANDO<<<')
+print('\33[34m>>>PROCESSANDO<<<')
 sleep(3)
 print('')
 if n == resultado:
-    print('Parabéns voçê acertou ! venceu o desafio!')
+    print('\33[32mParabéns voçê acertou ! venceu o desafio!')
 else:
-    print(f' infelizmente voçê perdeu o resultado do sorteio foi {resultado}!')
+    print(f' \33[31mInfelizmente voçê perdeu o resultado do sorteio foi {resultado}!')
 
