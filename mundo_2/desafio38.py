@@ -12,5 +12,5 @@ if num_um > num_dois :
 elif num_dois > num_um:
     print('O SEGUNDO valor é maior')
 
-elif num_um == num_dois or num_dois == num_um:
+else:
     print('Não existe valor maior os dois são iguais!')
