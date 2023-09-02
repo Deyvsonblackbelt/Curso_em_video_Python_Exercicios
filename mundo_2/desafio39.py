@@ -5,4 +5,17 @@
 # prazo.
 
 
-ano = input('Ano de nascimento: ')
+ano = int(input('Ano de nascimento: '))
+base = 2023
+cal = base - ano
+if base - ano == 18:
+    print(f'Já tem {cal} anos a idade certa pra se alistar!')
+
+elif base - ano < 18:
+    print('Ainda não tem idade suficiente para se alistar')
+    if base - ano < 18:
+        print(f'Ainda falta {18-cal} anos!')
+
+elif base - ano > 18:
+    print(f'Voçe já passou da idade de se alistar! pois tem {cal-18} anos a mais da idade de alistamento ')
+
