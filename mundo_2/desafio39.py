@@ -7,7 +7,7 @@
 from datetime import date
 
 nasci = int(input('Ano de nascimento: '))
-base = 2023
+base = date.today().year
 idade = base - nasci
 if base - nasci == 18:
     print(f'Já tem {idade} anos a idade certa pra se alistar!')
