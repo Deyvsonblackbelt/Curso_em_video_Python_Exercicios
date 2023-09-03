@@ -4,18 +4,25 @@
 # Seu programa tambem devera mostrar o tempo que falta ou que passou o prazo do
 # prazo.
 
+from datetime import date
 
-ano = int(input('Ano de nascimento: '))
+nasci = int(input('Ano de nascimento: '))
 base = 2023
-cal = base - ano
-if base - ano == 18:
-    print(f'Já tem {cal} anos a idade certa pra se alistar!')
+idade = base - nasci
+if base - nasci == 18:
+    print(f'Já tem {idade} anos a idade certa pra se alistar!')
 
-elif base - ano < 18:
-    print('Ainda não tem idade suficiente para se alistar')
-    if base - ano < 18:
-        print(f'Ainda falta {18-cal} anos!')
+elif base - nasci < 18:
+    print('Ainda não tem idade suficiente para o alistamento')
+    if base - nasci < 18:
+        saldo = 18 - idade
+        print(f'Ainda falta {saldo} anos!')
+        ano = base + saldo
+        print(f'Seu alistamento será em {ano}. !')
 
-elif base - ano > 18:
-    print(f'Voçe já passou da idade de se alistar! pois tem {cal-18} anos a mais da idade de alistamento ')
+elif base - nasci > 18:
+    saldo = idade - 18
+    print(f'Voçe já passou da idade de se alistar! pois tem {saldo} anos a mais da idade de alistamento ')
+    ano = base - saldo
+    print(f'Você já deveria ter se alistado no de {ano}.')
 
