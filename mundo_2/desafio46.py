@@ -1,50 +1,14 @@
-#Exercício Python 45: Crie um programa que faça o computador jogar Jokenpô com você.
+'''Exercício Python 46: Faça um programa que mostre na tela uma
+contagem regressiva para o estouro de fogos de artifício,
+indo de 10 até 0, com uma pausa de 1 segundo entre eles.'''
 
-from random import randint
 from time import sleep
-itens = ('Pedra','Papel','Tesoura')
-computador = randint(0, 2)
-print('''Suas opções:
-[ 0 ] PEDRA
-[ 1 ] PAPEL
-[ 2 ] TESOURA''')
-jogador = int(input('Qual é a sua jogada? '))
-print('JO')
-sleep(1)
-print('KEN')
-sleep(1)
-print('PO!!!')
-print('-=' * 11)
-print(f'Computador jogou {itens[computador]}')
-print(f'Jogador jogou {itens[jogador]}')
-print('-=' * 11)
+i = int(10)
+f = int(0)
+p = int(-1)
 
-if computador == 0:
-    if jogador == 0:
-        print('EMPATE')
-    elif jogador == 1:
-        print('JOGADOR VENCE')
-    elif jogador == 2:
-        print('COMPUTADOR VENCE')
-    else:
-        print('JOGADA INVÁLIDA!')
+for c in range(i, f-1, p):
+    print(c)
+    sleep(1)
 
-elif computador == 1:
-    if jogador == 0:
-        print('COMPUTADOR VENCE')
-    elif jogador == 1:
-        print('EMPATE')
-    elif jogador == 2:
-        print('JOGADOR VENCE')
-    else:
-        print('JOGADA INVÁLIDA!')
-
-elif computador == 2:
-    if jogador == 0:
-        print('JOGADOR VENCE')
-    elif jogador == 1:
-        print('COMPUTADOR VENCE')
-    elif jogador == 2:
-        print('EMPATE')
-    else:
-        print('JOGADA INVÁLIDA!')
+print('BOOOMM!!!')
