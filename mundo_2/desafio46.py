@@ -12,3 +12,15 @@ for c in range(i, f-1, p):
     sleep(1)
 
 print('BOOOMM!!!')
+
+''' ou pode ser feito desta forma:
+
+for cont in range(10, -1, -1)
+  print(cont)
+  sleep(0.5)
+print('boomm, boomm')
+ 
+
+
+
+'''
